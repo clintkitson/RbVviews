@@ -11,6 +11,7 @@ gem install RbVviews
 Requirements
 ============
 Ruby 1.8.7+<br>
+RbVmomi<br>
 
 Ruby Example
 ============
