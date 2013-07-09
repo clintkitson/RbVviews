@@ -11,3 +11,18 @@ gem install RbVviews
 Requirements
 ============
 Ruby 1.8.7+<br>
+
+Ruby Example
+============
+require 'RbVviews'<br>
+<Br>
+vc_view = RbVviews.new("vcenter01.brswh.local","root","vmware")<br>
+vc_view.connect<br>
+vm = vc_view.get_view('VirtualMachine','config.instanceUuid','5038de0a-a3cf-8779-3c4c-d481b54876a9')<br>
+puts vm[0].obj.name<br>
+
+PowerCLI Equivalent Example
+===========================
+Connect-VIServer -server vcenter01.brswh.local -username root -password vmware<br>
+$vm = Get-View -ViewType VirtualMachine -Filter @{"config.instanceuuid"="5038de0a-a3cf-8779-3c4c-d481b54876a9"}<br>
+Write-Host $vm.name<br>
