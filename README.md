@@ -10,16 +10,16 @@ gem install RbVviews
 
 Requirements
 ============
-Ruby 1.8.7+
-Hiera (included with Puppet 3)
-Ensure Hiera is working with static yaml/json files for Node Classification first
-VM has "puppet.classes" custom value of a class name that is valid
+Ruby 1.8.7+<br>
+Hiera (included with Puppet 3)<Br>
+Ensure Hiera is working with static yaml/json files for Node Classification first<br>
+VM has "puppet.classes" custom value of a class name that is valid<br>
 
 Configure
 =========
-1) Edit /etc/puppet/hiera.yaml and replace server, username (can be read-only account), and password for vCenter
-2) Edit /etc/puppet/manifests/site.pp and add following line
-hiera_include('classes')
+1) Edit /etc/puppet/hiera.yaml and replace server, username (can be read-only account), and password for vCenter<Br>
+2) Edit /etc/puppet/manifests/site.pp and add following line<Br>
+hiera_include('classes')<br>
 
 Run
 ===
