@@ -18,17 +18,6 @@ VM has "puppet.classes" custom value of a class name that is valid
 Configure
 =========
 1) Edit /etc/puppet/hiera.yaml and replace server, username (can be read-only account), and password for vCenter
-
----
-:backends:
-   - vcenter
-:hierarchy:
-   - "%{vminstanceuuid}"
-:vcenter:
-   :server: vcenter01.brswh.local
-   :username: root
-   :password: vmware
-   :key: "%{vminstanceuuid}"
 2) Edit /etc/puppet/manifests/site.pp and add following line
 hiera_include('classes')
 
