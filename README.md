@@ -4,6 +4,8 @@ This is a Ruby class that leverages (RbVmomi) to issue lookups based on settings
 
 The behavior is modeled from Get-View from PowerCLI.
 
+<a href="http://velemental.com/2013/07/10/project-steel-integrating-virtual-machines-guests-with-puppet/">vElemental Blog Post</a>
+
 Install
 =======
 gem install RbVviews
